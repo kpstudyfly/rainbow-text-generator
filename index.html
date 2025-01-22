@@ -1,1 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Text Generator | Rainbow Style Font Generator Copy and Paste</title>
+
+<meta name="description" content="Generate colorful text with Rainbow Text Generator. Use the Rainbow Font Generator to create beautiful Rainbow Letters and copy-paste them easily. Make your text stand out with Rainbow Text Maker and explore various Rainbow Font Styles. Try the Rainbow Friends Font Generator and enjoy stylish rainbow-style fonts.">
+
+<meta name="keywords" content="Rainbow Text Generator, Rainbow Font Generator, Rainbow Letters, Rainbow Text Maker, Rainbow Font Copy and Paste, Rainbow Font Style, Create Colorful Text, Rainbow Friends Font Generator, Rainbow Style Font Generator Copy and Paste">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="rainbowtextgenerator.online"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="google-site-verification" content="2RFd56tYP62RmV5WYGZtNiOebDkrKfB3RkRKONWfeHM" />
+<style>
+.container-fluid {
+  padding: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group .btn {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 10px;
+  }
+  
+  .card {
+    margin-bottom: 15px;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .btn-group .btn {
+    flex: 1 0 auto;
+    margin-bottom: 5px;
+  }
+}
+</style>
+    <style>
+
+:root {
+  --primary-color: #4a4a4a;
+  --secondary-color: #f5f5f5;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --background-color: #fff;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+.text-input textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.controls > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+button,
+select,
+input[type="color"],
+input[type="range"] {
+  margin: 5px 0;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+.preview {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: var(--secondary-color, #f9f9f9);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.preview:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+#textPreview {
+  min-height: 150px;
+  border: 2px solid var(--primary-color, #3498db);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: var(--text-color, #333);
+  background-color: var(--bg-color, #fff);
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#textPreview:focus {
+  border-color: var(--focus-color, #2ecc71);
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+}
+
+@media (max-width: 768px) {
+  .preview {
+    padding: 10px;
+  }
+
+  #textPreview {
+    font-size: 0.9rem;
+  }
+}
+
+.export-options,
+.share-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .controls > div {
+    flex: 100%;
+  }
+}
+
+/* Dark mode */
+body.dark-mode {
+  --primary-color: #f5f5f5;
+  --secondary-color: #4a4a4a;
+  --text-color: #f5f5f5;
+  --background-color: #333;
+}
+
+body.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+  color: #f5f5f5 !important;
+}
+
+/* Animations */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes scrolling {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes blinking {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+</style>
+</head>
+<body>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+ <div class="container">
+        <h1 id="title" class="text-3xl font-bold mb-4 text-center">
+    <a href="/" style="text-decoration: none;">Rainbow Text Generator</a>
+</h1>   <div style="text-align: justify; margin: 0 20px;"><b>Rainbow Text Generator </b>is an amazing tool that transforms your text into colorful and eye-catching designs. Using it is simple — just input your <b>Rainbow text style</b> and get font of Rainbow Font Generated<b>,</b> choose a style, and <b>copy-paste</b> and Download.</div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Text Input</h5></center>
+                        <textarea id="userText" class="form-control" rows="4" placeholder="Type Here Rainbow Text Generator..."></textarea>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Text Style Gradient</h5></center>
+                        <div class="mb-3">
+                            <label for="gradientType" class="form-label">Gradient</label>
+                            <select id="gradientType" class="form-select">
+                                <option value="linear">Linear Gradient</option>
+                                <option value="radial">Radial Gradient</option>
+                                <option value="conic">Conic Gradient</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fontSize" class="form-label">Font Size: <span id="fontSizeValue">24px</span></label>
+                            <input type="range" class="form-range" id="fontSize" min="12" max="72" value="24">
+                        </div>
+                        <div class="btn-group mb-3" role="group">
+                            <button id="toggleBold" class="btn btn-outline-primary">Bold</button>
+                            <button id="toggleItalic" class="btn btn-outline-primary">Italic</button>
+                            <button id="toggleUnderline" class="btn btn-outline-primary">Underline</button>
+                        </div>
+                        <div class="mb-3">
+                            <label for="textShadow" class="form-label">TextbShadow: <span id="textShadowValue">0px</span></label>
+                            <input type="range" class="form-range" id="textShadow" min="0" max="10" value="0">
+                        </div>
+                        <div class="mb-3">
+                            <label for="glowEffect" class="form-label">Glow Effect: <span id="glowEffectValue">0px</span></label>
+                            <input type="range" class="form-range" id="glowEffect" min="0" max="20" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Animation</h5></center>
+                        <div class="mb-3">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="toggleAnimation">
+                                <label class="form-check-label" for="toggleAnimation">Animation Toggle</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="animationType" class="form-label">Animation Type</label>
+                            <select id="animationType" class="form-select">
+                                <option value="rainbow">Rainbow</option>
+                                <option value="typing">Typing</option>
+                                <option value="scrolling">Scrolling</option>
+                                <option value="blinking">Blinking</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="animationSpeed" class="form-label">Animation Speed: <span id="animationSpeedValue">1s</span></label>
+                            <input type="range" class="form-range" id="animationSpeed" min="0.5" max="5" step="0.5" value="1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Color Palette</h5></center>
+                        <div id="colorPalette" class="mb-3"></div>
+                        <button id="addColor" class="btn btn-primary">Add Color</button>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Rainbow Live Preview</h5></center>
+                        <div id="textPreview" class="border p-3 mb-3" style="min-height: 100px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <center><h5 class="card-title">Export and Share </h5></center>
+                        <div class="btn-group mb-3" role="group">
+                            <button id="copyHTML" class="btn btn-outline-primary">Html Code Copy</button>
+                            <button id="copyCSS" class="btn btn-outline-primary">CSS Style Copy</button>
+                            <button id="downloadPNG" class="btn btn-outline-primary">PNG Download</button>
+                            <button id="downloadSVG" class="btn btn-outline-primary">SVG Download</button>
+                            <button id="downloadGIF" class="btn btn-outline-primary">GIF Download</button>
+                            <button id="generateQR" class="btn btn-outline-primary">QR Code Generate</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button id="shareFacebook" class="btn btn-outline-primary">
+                                <i class="bi bi-facebook"></i> Share on Facebook
+                            </button>
+                            <button id="shareTwitter" class="btn btn-outline-primary">
+                                <i class="bi bi-twitter"></i>Share on Twitter
+                            </button>
+                            <button id="shareInstagram" class="btn btn-outline-primary">
+                                <i class="bi bi-instagram"></i> Share on Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <h2 style="text-align: center; margin: 0 20px;">Rainbow Text Generator Copy And Paste&nbsp;</h2><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">Do you want your text to look more attractive? If yes, then the Rainbow Text Generator might be the perfect tool for you! This tool transforms your regular text into a beautiful array of colors, making it more vibrant and eye-catching. Whether you're posting on social media or designing a website, rainbow text always grabs attention.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h2 style="text-align: center; margin: 0 20px;">What is a Rainbow Text Generator?</h2><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">A Rainbow Text Generator is an online tool that turns your regular text into a colorful masterpiece. This rainbow effect makes your text stand out, adding vibrancy and appeal. It's super easy to copy and paste anywhere, whether it's on social media, a website, or a blog post.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h3 style="text-align: justify; margin: 0 20px;">Why Use a Rainbow Text Generator?</h3><br><div style="text-align: justify; margin: 0 20px;">Whenever we create digital content, we want something that will grab the attention of our audience. A Rainbow Text Generator does just that. Here’s why it’s useful:</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Stand Out on Social Media:</b> Rainbow text can make your Instagram, Facebook, or Twitter posts more engaging.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Fresh Look for Your Website:</b> Use rainbow text for headings or banners to give your site a lively appearance.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Enhance Graphics and Designs:</b> Rainbow text can make your designs look more professional and creative.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">Moreover, with the convenience of copy and paste, you can easily use this text anywhere, without needing complex design software.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h2 style="text-align: center; margin: 0 20px;">Types of Rainbow Text Generators</h2><br><h3 style="text-align: justify; margin: 0 20px;">1. Animated Rainbow Text Generator</h3><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">If you want your rainbow text to not just be colorful but also dynamic, the Animated Rainbow Text Generator is a great option. This tool makes your text change colors as it moves, giving it an interactive and lively feel that adds extra flair to your content.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h3 style="text-align: justify; margin: 0 20px;">2. Rainbow 3D Text Generator</h3><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">For those looking for something extra special, the Rainbow 3D Text Generator takes your text to the next level by adding depth. The result is a 3D effect that makes your rainbow text look even more striking and attention-grabbing.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h3 style="text-align: justify; margin: 0 20px;">3. Free Rainbow Gradient Text Generator</h3><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">If you prefer a smooth, soft transition of colors, the Free Rainbow Gradient Text Generator is the way to go. This generator applies a gradient effect to the text, making it look polished and professional.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h2 style="text-align: center; margin: 0 20px;">How to Use Rainbow Text Generator?</h2><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">Using it is very simple. Just follow these steps:</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">Choose Your Text: Start by selecting the text you want to transform into a rainbow style.</div><div style="text-align: justify; margin: 0 20px;"><ol><li>Pick a Style: Choose from various styles such as rainbow, gradient, animated, or 3D.</li><li>Type Your Text: Enter the text you want to apply the rainbow effect to.</li><li>Generate Your Text: Click the "Generate" button, and your rainbow text will be ready.</li><li>Copy and Paste: Now, simply copy the text and paste it wherever you like – on Instagram bio, Facebook posts, or your website.</li></ol></div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h2 style="text-align: center; margin: 0 20px;">Rainbow Text Generator for Instagram</h2><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">If you want to create eye-catching posts or bios on Instagram, rainbow text is an amazing way to go about it. The Rainbow Text Generator for Instagram can make your profile stand out and grab your followers' attention. It will add creativity and uniqueness to your content.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h3 style="text-align: justify; margin: 0 20px;">Free Rainbow Font Generator</h3><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">Don’t worry if you're on a budget! Many Free Rainbow Font Generators are available online, allowing you to generate stunning colorful text without spending a penny. You can use these free tools to enhance your designs and make them more appealing.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h3 style="text-align: justify; margin: 0 20px;">Benefits of Using a Rainbow Text Generator</h3><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Easy to Use:</b> You don’t need any complex software. Just type your text and hit the generate button to make it colorful.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Instant Results:</b> Within seconds, your rainbow text will be ready to copy and paste.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Free Tools:</b> Many rainbow text generators are free, making them accessible to everyone.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;"><b>Customization: </b>Some generators allow you to customize the colors and animations of your text.</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><h2 style="text-align: center; margin: 0 20px;">Conclusion</h2><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">A Rainbow Text Generator is a fantastic and easy way to turn your plain text into something colorful and eye-catching. Whether you’re on social media, working on a website, or creating graphics, rainbow text can enhance your content and make it more appealing. Plus, with the availability of free tools, you can generate beautiful rainbow text without spending anything!</div><div style="text-align: justify; margin: 0 20px;"><br>
+</div><div style="text-align: justify; margin: 0 20px;">So, if you want your text to steal the spotlight, use a Rainbow Text Generator and give your digital content a fresh and vibrant look.</div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const userText = document.getElementById("userText")
+  const textPreview = document.getElementById("textPreview")
+  const gradientType = document.getElementById("gradientType")
+  const toggleAnimation = document.getElementById("toggleAnimation")
+  const fontSize = document.getElementById("fontSize")
+  const fontSizeValue = document.getElementById("fontSizeValue")
+  const toggleBold = document.getElementById("toggleBold")
+  const toggleItalic = document.getElementById("toggleItalic")
+  const toggleUnderline = document.getElementById("toggleUnderline")
+  const textShadow = document.getElementById("textShadow")
+  const textShadowValue = document.getElementById("textShadowValue")
+  const glowEffect = document.getElementById("glowEffect")
+  const glowEffectValue = document.getElementById("glowEffectValue")
+  const animationType = document.getElementById("animationType")
+  const animationSpeed = document.getElementById("animationSpeed")
+  const animationSpeedValue = document.getElementById("animationSpeedValue")
+  const addColor = document.getElementById("addColor")
+  const colorPalette = document.getElementById("colorPalette")
+
+  let isAnimated = false
+  let isDarkMode = false
+  const colors = ["#ff0000", "#00ff00", "#0000ff"]
+
+  function updatePreview() {
+    const text = userText.value || "Rainbow Text"
+    const html = `<span id="previewText">${text}</span>`
+    textPreview.innerHTML = html
+    applyStyles()
+  }
+
+  function getGradient() {
+    const type = gradientType.value
+    const colorStops = colors.map((color, index) => `${color} ${(index * 100) / (colors.length - 1)}%`).join(", ")
+    return `${type}-gradient(to right, ${colorStops})`
+  }
+
+  function applyStyles() {
+    const previewText = document.getElementById("previewText")
+    previewText.style.fontSize = `${fontSize.value}px`
+    previewText.style.fontWeight = toggleBold.classList.contains("active") ? "bold" : "normal"
+    previewText.style.fontStyle = toggleItalic.classList.contains("active") ? "italic" : "normal"
+    previewText.style.textDecoration = toggleUnderline.classList.contains("active") ? "underline" : "none"
+    previewText.style.textShadow = `0 0 ${textShadow.value}px rgba(0,0,0,0.5)`
+    previewText.style.filter = `drop-shadow(0 0 ${glowEffect.value}px ${colors[0]})`
+
+    if (isAnimated) {
+      const speed = animationSpeed.value
+      switch (animationType.value) {
+        case "rainbow":
+          previewText.style.backgroundImage = getGradient()
+          previewText.style.webkitBackgroundClip = "text"
+          previewText.style.webkitTextFillColor = "transparent"
+          previewText.style.animation = `rainbow ${speed}s linear infinite`
+          break
+        case "typing":
+          previewText.style.width = "0"
+          previewText.style.overflow = "hidden"
+          previewText.style.borderRight = "0.15em solid black"
+          previewText.style.whiteSpace = "nowrap"
+          previewText.style.animation = `typing ${speed}s steps(40, end), blinking-cursor .75s step-end infinite`
+          break
+        case "scrolling":
+          textPreview.style.overflow = "hidden"
+          previewText.style.display = "inline-block"
+          previewText.style.paddingLeft = "100%"
+          previewText.style.animation = `scrolling ${speed * 5}s linear infinite`
+          break
+        case "blinking":
+          previewText.style.animation = `blinking ${speed}s ease-in-out infinite`
+          break
+      }
+    } else {
+      previewText.style.animation = "none"
+      previewText.style.backgroundImage = getGradient()
+      previewText.style.webkitBackgroundClip = "text"
+      previewText.style.webkitTextFillColor = "transparent"
+    }
+  }
+
+  function updateColorPalette() {
+    colorPalette.innerHTML = ""
+    colors.forEach((color, index) => {
+      const input = document.createElement("input")
+      input.type = "color"
+      input.value = color
+      input.addEventListener("input", (e) => {
+        colors[index] = e.target.value
+        updatePreview()
+      })
+      colorPalette.appendChild(input)
+    })
+  }
+
+  // Event listeners
+  userText.addEventListener("input", updatePreview)
+  gradientType.addEventListener("change", updatePreview)
+  fontSize.addEventListener("input", () => {
+    fontSizeValue.textContent = `${fontSize.value}px`
+    updatePreview()
+  })
+  toggleAnimation.addEventListener("change", () => {
+    isAnimated = toggleAnimation.checked
+    updatePreview()
+  })
+  ;[toggleBold, toggleItalic, toggleUnderline].forEach((button) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active")
+      updatePreview()
+    })
+  })
+  textShadow.addEventListener("input", () => {
+    textShadowValue.textContent = `${textShadow.value}px`
+    updatePreview()
+  })
+  glowEffect.addEventListener("input", () => {
+    glowEffectValue.textContent = `${glowEffect.value}px`
+    updatePreview()
+  })
+  animationType.addEventListener("change", updatePreview)
+  animationSpeed.addEventListener("input", () => {
+    animationSpeedValue.textContent = `${animationSpeed.value}s`
+    updatePreview()
+  })
+  addColor.addEventListener("click", () => {
+    if (colors.length < 5) {
+      colors.push("#" + Math.floor(Math.random() * 16777215).toString(16))
+      updateColorPalette()
+      updatePreview()
+    }
+  })
+
+  // Dark mode toggle
+  const darkModeToggle = document.getElementById("darkModeToggle")
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode")
+    isDarkMode = document.body.classList.contains("dark-mode")
+    updatePreview()
+  })
+
+  // Export and share functions
+  document.getElementById("copyHTML").addEventListener("click", () => {
+    const htmlContent = textPreview.innerHTML
+    navigator.clipboard.writeText(htmlContent).then(() => alert("HTML copied to clipboard!"))
+  })
+
+  document.getElementById("copyCSS").addEventListener("click", () => {
+    const styles = window.getComputedStyle(document.getElementById("previewText"))
+    const cssContent = `
+      font-size: ${styles.fontSize};
+      font-weight: ${styles.fontWeight};
+      font-style: ${styles.fontStyle};
+      text-decoration: ${styles.textDecoration};
+      color: ${styles.color};
+      background-image: ${styles.backgroundImage};
+      -webkit-background-clip: ${styles.webkitBackgroundClip};
+      -webkit-text-fill-color: ${styles.webkitTextFillColor};
+      animation: ${styles.animation};
+    `
+    navigator.clipboard.writeText(cssContent).then(() => alert("CSS copied to clipboard!"))
+  })
+
+  document.getElementById("downloadPNG").addEventListener("click", () => {
+    html2canvas(textPreview).then((canvas) => {
+      canvas.toBlob((blob) => saveAs(blob, "rainbow-text.png"))
+    })
+  })
+
+  document.getElementById("downloadSVG").addEventListener("click", () => {
+    const svgData = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="${textPreview.offsetWidth}" height="${textPreview.offsetHeight}">
+        <foreignObject width="100%" height="100%">
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            ${textPreview.innerHTML}
+            <style>
+              ${document.getElementById("previewText").style.cssText}
+            </style>
+          </div>
+        </foreignObject>
+      </svg>
+    `
+    const blob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" })
+    saveAs(blob, "rainbow-text.svg")
+  })
+
+  document.getElementById("downloadGIF").addEventListener("click", () => {
+    alert("GIF download functionality is not implemented in this demo.")
+  })
+
+  document.getElementById("generateQR").addEventListener("click", () => {
+    const text = userText.value || "Rainbow Text"
+    const qrContainer = document.createElement("div")
+    qrContainer.style.position = "fixed"
+    qrContainer.style.top = "50%"
+    qrContainer.style.left = "50%"
+    qrContainer.style.transform = "translate(-50%, -50%)"
+    qrContainer.style.backgroundColor = "white"
+    qrContainer.style.padding = "20px"
+    qrContainer.style.borderRadius = "10px"
+    qrContainer.style.boxShadow = "0 0 10px rgba(0,0,0,0.5)"
+    document.body.appendChild(qrContainer)
+
+    QRCode.toCanvas(qrContainer, text, (error) => {
+      if (error) console.error(error)
+      console.log("QR code generated!")
+    })
+
+    const closeButton = document.createElement("button")
+    closeButton.textContent = "Close"
+    closeButton.style.marginTop = "10px"
+    closeButton.addEventListener("click", () => {
+      document.body.removeChild(qrContainer)
+    })
+    qrContainer.appendChild(closeButton)
+  })
+
+  // Social media share functions
+  document.getElementById("shareFacebook").addEventListener("click", () => {
+    const url = encodeURIComponent(window.location.href)
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, "_blank")
+  })
+
+  document.getElementById("shareTwitter").addEventListener("click", () => {
+    const text = encodeURIComponent("Check out my Rainbow Text!")
+    const url = encodeURIComponent(window.location.href)
+    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank")
+  })
+
+  document.getElementById("shareInstagram").addEventListener("click", () => {
+    alert("Instagram sharing is not directly supported. You can take a screenshot and share it on Instagram manually.")
+  })
+
+  // Initialize
+  updateColorPalette()
+  updatePreview()
+})
+
+
+</script>
+  
+  <script>
+const userText = document.getElementById('userText');
+const isLetterByLetter = document.getElementById('isLetterByLetter');
+const textPreview = document.getElementById('textPreview');
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+function applyStyles() {
+  // Add any additional styling logic here if needed.
+}
+
+function updatePreview() {
+  const text = userText.value || "Rainbow Text";
+  let html = "";
+
+  if (isLetterByLetter.checked) {
+    for (let i = 0; i < text.length; i++) {
+      html += `<span class="rainbow-letter" style="color: ${colors[i % colors.length]}">${text[i]}</span>`;
+    }
+  } else {
+    html = `<span class="rainbow-text">${text}</span>`;
+  }
+
+  textPreview.innerHTML = html;
+  textPreview.className = "preview-text";
+  applyStyles();
+}
+
+userText.addEventListener('input', updatePreview);
+isLetterByLetter.addEventListener('change', updatePreview);
+
+updatePreview();
+</script>
+  
+ <!-- Footer Section -->
+  <br>
+<footer>
+    <div class="container" style="text-align: center; padding: 10px; background-color: #f1f1f1;">
+        <p style="color: #333; font-size: 14px;">© 2025 Rainbow Text Generator. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+
 
