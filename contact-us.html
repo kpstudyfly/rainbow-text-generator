@@ -1,1 +1,241 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Contact us - Rainbow Text Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+    <link rel="icon" href="Your Favicon URL" type="image/png">
+    <style> 
+        
+        /* 🌟 General Styling for Better Readability */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111827;  /* Dark mode background */
+    color: #e5e7eb;
+    line-height: 1.8;
+    padding: 20px;
+}
 
+/* 🌟 Center Content for Better UX */
+.article-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 🌟 Stylish Headings */
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #facc15; /* Yellow-Gold Color */
+    border-bottom: 2px solid #f87171; /* Red Underline */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #facc15; /* Yellow-Gold Color */
+    border-bottom: 2px solid #f87171; /* Red Underline */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 🌟 Section Highlight Boxes */
+.highlight-box {
+    padding: 20px;
+    border-left: 4px solid #f87171; /* Red Border */
+    background: #1f2937; /* Dark Gray Box */
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* 🌟 Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #38bdf8; /* Light Blue */
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #0ea5e9; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* 🌟 Stylish Bullet Points */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";  /* Green Checkmark */
+    color: #22c55e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 🌟 Text Highlight for Important Words */
+.highlight {
+    color: #38bdf8; /* Light Blue */
+    font-weight: bold;
+}
+
+/* 🌟 Code Blocks for BBCode & HTML Code */
+.code-box {
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    color: #facc15; /* Yellow */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    border-left: 4px solid #f87171;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 600px) {
+    .article-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Header Section -->
+<header class="bg-gray-900 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-5">
+        <!-- Logo -->
+        <a href="/" class="font-bold flex items-center" style="font-size: 19px; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent;">
+            <i class="fa-solid fa-palette mr-2"></i> Rainbow Text Generator
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-6" id="nav-links">
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-house mr-1"></i> Home</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-user-shield mr-1"></i> Privacy Policy</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-file-contract mr-1"></i> Terms & Conditions</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden flex flex-col bg-gray-800 text-white space-y-2 py-4 px-5 md:hidden">
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-house mr-1"></i> Home</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-user-shield mr-1"></i> Privacy Policy</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-file-contract mr-1"></i> Terms & Conditions</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+    </nav>
+</header>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+                <center> 
+        <h1>Contact Us</h1></center>
+<br>
+  
+  <div style="text-align: justify; margin: 0 20px;">
+ <p>Have questions, feedback, or need support? We'd love to hear from you! Feel free to reach out to us using the details below.</p><p><br>
+</p>
+</div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    <h3>Email</h3><br>
+    <p>For any inquiries or support, email us at: <b>rainbowtext@gmail.com</b></p><p><b><br>
+</b></p>
+</div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    <h3>Social Media</h3><div><br>
+</div>
+    <p>Stay connected and get the latest updates:</p>
+    <ul>
+        <li>Facebook: <a href="#" target="_blank">Rainbowtext</a></li>
+        <li>Twitter: <a href="#" target="_blank">@Rainbowtext</a></li>
+        <li>Instagram: <a href="#" target="_blank">@Rainbowtext</a></li>
+    </ul>
+</div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    <h3>Feedback Form</h3><div><br>
+</div>
+    <p>If you have suggestions or feature requests, fill out our form below:</p>
+    <form action="mailto:rainbowtext@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" style="width: 100%; padding: 5px; margin: 5px 0;"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 5px; margin: 5px 0;"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" style="width: 100%; padding: 5px; margin: 5px 0;"></textarea><br>
+
+        <input type="submit" value="Send" style="background-color: #ff6600; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+    </form>
+</div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    <p><br>
+</p><p>We strive to respond to all inquiries within 24-48 hours. Thank you for using <b>Rainbow Text Generator</b>!</p>
+</div>
+<br>
+<!-- Footer Section -->
+    <div class="container mx-auto">
+    <!-- Navigation Bar -->
+    <div class="bg-gray-900 py-3 flex justify-center gap-8 border-b border-gray-800">
+        <a href="/" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-home text-base mr-2"></i>
+            <p class="text-sm">Home</p>
+        </a>
+        <a href="/about.html" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-info-circle text-base mr-2"></i>
+            <p class="text-sm">About</p>
+        </a>
+        <a href="/contact.html" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-phone text-base mr-2"></i>
+            <p class="text-sm">Contact</p>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-3 border-t border-gray-800">
+        <p><i class="fas fa-copyright"></i> 2025 Rainbow Text Generator.</p>
+    </footer>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</body>
+</html>
