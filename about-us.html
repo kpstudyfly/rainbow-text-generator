@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>About us - Rainbow Text Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+    <link rel="icon" href="Your Favicon URL" type="image/png">
+    <style> 
+        
+        /* 🌟 General Styling for Better Readability */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111827;  /* Dark mode background */
+    color: #e5e7eb;
+    line-height: 1.8;
+    padding: 20px;
+}
 
+/* 🌟 Center Content for Better UX */
+.article-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 🌟 Stylish Headings */
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #facc15; /* Yellow-Gold Color */
+    border-bottom: 2px solid #f87171; /* Red Underline */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #facc15; /* Yellow-Gold Color */
+    border-bottom: 2px solid #f87171; /* Red Underline */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 🌟 Section Highlight Boxes */
+.highlight-box {
+    padding: 20px;
+    border-left: 4px solid #f87171; /* Red Border */
+    background: #1f2937; /* Dark Gray Box */
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* 🌟 Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background: #38bdf8; /* Light Blue */
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #0ea5e9; /* Darker Blue */
+    transform: scale(1.05);
+}
+
+/* 🌟 Stylish Bullet Points */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px 0;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";  /* Green Checkmark */
+    color: #22c55e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 🌟 Text Highlight for Important Words */
+.highlight {
+    color: #38bdf8; /* Light Blue */
+    font-weight: bold;
+}
+
+/* 🌟 Code Blocks for BBCode & HTML Code */
+.code-box {
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: monospace;
+    color: #facc15; /* Yellow */
+    overflow-x: auto;
+    white-space: pre-wrap;
+    border-left: 4px solid #f87171;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 600px) {
+    .article-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Header Section -->
+<header class="bg-gray-900 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-5">
+        <!-- Logo -->
+        <a href="/" class="font-bold flex items-center" style="font-size: 19px; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent;">
+            <i class="fa-solid fa-palette mr-2"></i> Rainbow Text Generator
+        </a>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-6" id="nav-links">
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-house mr-1"></i> Home</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-user-shield mr-1"></i> Privacy Policy</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-file-contract mr-1"></i> Terms & Conditions</a>
+            <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden flex flex-col bg-gray-800 text-white space-y-2 py-4 px-5 md:hidden">
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-house mr-1"></i> Home</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-info-circle mr-1"></i> About</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-user-shield mr-1"></i> Privacy Policy</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-file-contract mr-1"></i> Terms & Conditions</a>
+        <a href="#" class="hover:text-blue-400"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+    </nav>
+</header>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+                <center> 
+        <h1>About Us</h1></center>
+    <br> 
+  <div style="text-align: justify; margin: 0 20px;">
+    Welcome to <b>Rainbow Text Generator</b>, your one-stop destination for creating beautiful, eye-catching, and unique rainbow-colored text styles. Our platform is designed to help users generate stylish and colorful fonts effortlessly, making their text stand out in social media posts, messages, banners, and creative content.
+</div>
+
+<div style="text-align: justify; margin: 0 20px;"><br></div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    With an extensive collection of vibrant rainbow text effects, we offer a seamless experience where users can customize their text size, color gradients, and background styles. Whether you're a content creator, social media enthusiast, or just someone who loves experimenting with colorful fonts, our tool provides a simple yet powerful way to enhance your text.
+</div>
+
+<h2 style="text-align: center;">Our Key Features</h2>
+
+<div style="text-align: justify; margin: 0 20px;">
+    <ul>
+        <li><b>Wide Range of Colorful Effects</b> – Explore various rainbow text styles for different creative needs.</li>
+    </ul>
+    <ul>
+        <li> <b>Easy Copy & Paste</b> – Generate stylish colorful text and use it anywhere with a single click.</li>
+    </ul>
+    <ul>
+        <li> <b>PNG Export Option</b> – Download your customized text as an image for better design applications.</li>
+    </ul>
+    <ul>
+        <li><b>User-Friendly Interface</b> – A simple and clean tool that anyone can use without technical knowledge.</li>
+    </ul>
+    <ul>
+        <li><b>Instant Preview</b> – See real-time changes as you type.</li>
+    </ul>
+</div>
+
+<div style="text-align: justify; margin: 0 20px;"><br></div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    At <b>Rainbow Text Generator</b>, we aim to provide a smooth and hassle-free experience for users who want to add a creative and colorful touch to their text. Whether for social media, graphic design, or personal messages, our tool is here to make your words look more artistic and engaging.
+</div>
+
+<div style="text-align: justify; margin: 0 20px;"><br></div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    Try our <b>Rainbow Text Generator</b> today and bring your text to life with vibrant colors!
+</div>
+
+<div style="text-align: justify; margin: 0 20px;"><br></div>
+
+<div style="text-align: justify; margin: 0 20px;">
+    For inquiries, contact us at <b>rainbowtext@gmail.com</b>.
+</div>
+<br>
+<!-- Footer Section -->
+    <div class="container mx-auto">
+    <!-- Navigation Bar -->
+    <div class="bg-gray-900 py-3 flex justify-center gap-8 border-b border-gray-800">
+        <a href="/" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-home text-base mr-2"></i>
+            <p class="text-sm">Home</p>
+        </a>
+        <a href="/about.html" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-info-circle text-base mr-2"></i>
+            <p class="text-sm">About</p>
+        </a>
+        <a href="/contact.html" class="flex items-center text-white text-lg hover:text-blue-400">
+            <i class="fas fa-phone text-base mr-2"></i>
+            <p class="text-sm">Contact</p>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-3 border-t border-gray-800">
+        <p><i class="fas fa-copyright"></i> 2025 Rainbow Text Generator.</p>
+    </footer>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</body>
+</html>
