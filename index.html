@@ -343,31 +343,64 @@ ul li::before {
   </style>
 </head>
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-<!-- Header Section -->
-<header class="bg-white text-black py-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center px-5">
-        <!-- Logo -->
-        <a href="/" class="font-bold flex items-center" 
-           style="font-size: 19px; 
-                  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
-                  -webkit-background-clip: text; 
-                  color: transparent; 
-                  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-                  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.9);">
-            <i class="fa-solid fa-palette mr-2"></i> Rainbow Text Generator
-        </a>
-
-        <!-- Navigation Menu - Visible on both desktop and mobile -->
-        <nav class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 py-4 md:py-0 px-5 md:px-0">
-            <a href="/" class="hover:text-blue-400"><i class="fa-solid fa-house mr-1"></i> Home</a>
-            <a href="/about-us.html" class="hover:text-blue-400"><i class="fa-solid fa-info-circle mr-1"></i> About us</a>
-            <a href="/privacy.html" class="hover:text-blue-400"><i class="fa-solid fa-user-shield mr-1"></i> Privacy Policy</a>
-            <a href="/terms.html" class="hover:text-blue-400"><i class="fa-solid fa-file-contract mr-1"></i> Terms & Conditions</a>
-            <a href="/contact-us.html" class="hover:text-blue-400"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
-        </nav>
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+  <div class="container">
+    <!-- Logo with Rainbow Text -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="/" 
+       style="font-size: 19px;
+              background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+              -webkit-text-stroke: 1px rgba(0,0,0,0.9);">
+      <i class="fa-solid fa-palette me-2"></i>Rainbow Text Generator
+    </a>
+    
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <i class="fa-solid fa-house me-1"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us.html">
+            <i class="fa-solid fa-info-circle me-1"></i>About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/privacy.html">
+            <i class="fa-solid fa-user-shield me-1"></i>Privacy Policy
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/terms.html">
+            <i class="fa-solid fa-file-contract me-1"></i>Terms & Conditions
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us.html">
+            <i class="fa-solid fa-envelope me-1"></i>Contact
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </header>
 
 <!-- JavaScript for Toggle Menu -->
